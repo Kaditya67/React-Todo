@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 550px) {
+  .container, .container-md, .container-sm {
+      max-width: 720px;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 60px; /* Give some padding for the footer */
+}
+
+footer {
+  background-color: dark;
+  color: light;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
